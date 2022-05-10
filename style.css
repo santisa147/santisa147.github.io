@@ -210,10 +210,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+.carrusel{
+    height: fit-content;
+}
 
-.imagen__1{
-    height: 200px;
-    width: 250px;
+.imagen{
+    height: 500px;
+    width: 500px;
+}
+/* .imagen__1{
+    height: 500px;
+    width: 150px;
 }
 .imagen__2{
     height: 200px;
@@ -229,7 +236,8 @@ body{
 .imagen__4{
     height: 200px;
     width: 250px;
-}
+} */
+
 .galeria__Parrafo{
     line-height: 30px;
     font-weight: 500;
