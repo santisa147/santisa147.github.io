@@ -1,0 +1,40 @@
+.cabecera{
+    @include flexbox(column, center, center);
+    width: 100%;
+   
+}
+.logo{
+    @include flexbox(row-reverse, space-between, center);
+    width: fit-content;  
+}
+.logo__h1{
+    color: map-get($colores, color-principal );
+}
+.logo__img{
+    border-radius: 50%;
+    width: 50px;
+    border: solid map-get($colores, color-principal ) 1px ;
+    margin-right: 5px;
+}
+.cabecera__barraNavegacion{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(202,69,29,1) 25%, rgba(202,69,29,1) 50%, rgba(202,69,29,1) 75%, rgba(0,0,0,1) 100%);
+    height: fit-content;
+    width: 100%;
+    border:5px black;
+    border-style: double;    
+}
+
+.cabecera__barNav__lista{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+    @include flexbox(row, space-evenly, center);
+    width: fit-content;    
+}
+.cabecera__barNav__lista a{
+    @extend %boton;
+}
+.cabecera__barNav__lista a:hover{
+    transform: scale(1.5);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(202,69,29,1) 25%, rgba(202,69,29,1) 50%, rgba(202,69,29,1) 75%, rgba(0,0,0,1) 100%);
+} 

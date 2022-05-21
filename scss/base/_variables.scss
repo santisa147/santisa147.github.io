@@ -1,7 +1,11 @@
-$color-principal: rgb(202, 69, 29);
+$colores:(
+    color-principal: rgb(202, 69, 29),
+    bg-color: #000
+);
+
 $bg-img: url(../../imgs/fondo.jpg);
 %boton{
-    background-color: rgb(3, 3, 3);
+    background-color: map-get($colores, bg-color);
     display: inline-block;
     margin: 20px;
     padding: 2px;
@@ -26,6 +30,7 @@ $bg-img: url(../../imgs/fondo.jpg);
     font-style: oblique;
     line-height: 30px;
 }
+$Width-Complete: 98%;
 
 
 @mixin mediaQuery($pantalla){

@@ -1,0 +1,12 @@
+.footer{
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(202,69,29,1) 25%, rgba(202,69,29,1) 50%, rgba(202,69,29,1) 75%, rgba(0,0,0,1) 100%);
+    ul{
+        list-style: none;
+        @include flexbox(row, space-evenly, center);
+        
+    }
+    i{
+        color: map-get($colores, bg-color );
+    }
+}
