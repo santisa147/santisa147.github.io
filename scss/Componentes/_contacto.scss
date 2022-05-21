@@ -1,0 +1,14 @@
+.contacto__form{
+    color: rgb(253, 253, 253);
+    @include flexbox(column, center, center);
+    margin: 20px;
+}
+.form__in{
+    margin: 10px;
+    width: 20%;
+    background: map-get($colores, color-principal);
+}
+.form__send{
+    margin:10px;
+    width: 20%;
+}

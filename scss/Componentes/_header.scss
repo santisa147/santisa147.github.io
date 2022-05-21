@@ -17,10 +17,10 @@
     margin-right: 5px;
 }
 .cabecera__barraNavegacion{
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(202,69,29,1) 25%, rgba(202,69,29,1) 50%, rgba(202,69,29,1) 75%, rgba(0,0,0,1) 100%);
+    background: map-get($colores, bg-gradient);
     height: fit-content;
     width: 100%;
-    border:5px black;
+    border:5px map-get($colores, bg-color);
     border-style: double;    
 }
 

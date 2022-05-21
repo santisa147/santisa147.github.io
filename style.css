@@ -2,10 +2,7 @@
 
 
 } */
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     position: relative;
     background-color: #000;
@@ -49,7 +46,6 @@ body{
 .cabecera__barNav__lista{
     list-style: none;
     text-decoration: none;
-    
     font-weight: 500;
     display: flex;
     justify-content: space-evenly;
@@ -71,9 +67,7 @@ body{
     transform: scale(1.5);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(202,69,29,1) 25%, rgba(202,69,29,1) 50%, rgba(202,69,29,1) 75%, rgba(0,0,0,1) 100%);
 } 
-.active{
-    text-decoration: underline;
-}
+
 
 /* main */
 .main{
@@ -279,6 +273,9 @@ body{
     align-items: center;
     list-style: none;   
     width: 100%;  
+}
+i{
+    color: #000;
 }
 
 /* .footer__logo1{
