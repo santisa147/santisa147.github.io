@@ -1,26 +1,43 @@
+.mainHistoria a {
+  background-color: #030303;
+  display: inline-block;
+  margin: 20px;
+  padding: 2px;
+  border: solid #fff9f9 3px;
+  width: fit-content;
+  transition: transform .5s, background 1s; }
+
+.mainHistoria h1 {
+  color: #ca451d;
+  text-align: center;
+  text-decoration: underline; }
+
+.mainHistoria .parrafoH {
+  border: dotted white 1px;
+  padding: 5px;
+  text-align: justify;
+  color: #fdfbfb;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: oblique;
+  line-height: 30px; }
+
 .mainHistoria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-image: url(../../imgs/fondo.jpg);
   background-position: center;
   height: 600px;
   width: 100%; }
-  .mainHistoria h1 {
-    color: #ca451d;
-    text-align: center;
-    text-decoration: underline; }
-  .mainHistoria .parrafoH {
-    border: dotted white 1px;
-    padding: 5px;
-    text-align: justify;
-    color: #fdfbfb;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: oblique;
-    line-height: 30px;
-    width: 90%; }
   .mainHistoria a {
-    text-decoration: none;
-    color: #ca451d;
-    text-decoration: underline; }
+    color: #ca451d; }
+
+.footerH {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(90deg, black 0%, #ca451d 25%, #ca451d 50%, #ca451d 75%, black 100%); }
+  .footerH ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }

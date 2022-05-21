@@ -1,1 +1,71 @@
 $color-principal: rgb(202, 69, 29);
+$bg-img: url(../../imgs/fondo.jpg);
+%boton{
+    background-color: rgb(3, 3, 3);
+    display: inline-block;
+    margin: 20px;
+    padding: 2px;
+    border: solid rgb(255, 249, 249) 3px;
+    width: fit-content;
+    transition:  transform .5s, background 1s;
+}
+
+%titulo{
+    color: rgb(202, 69, 29); 
+    text-align: center;
+    text-decoration: underline;
+}
+  
+%parrafo{
+    border: dotted rgb(255, 255, 255) 1px;
+    padding: 5px;
+    text-align: justify;
+    color: rgb(253, 251, 251);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: oblique;
+    line-height: 30px;
+}
+
+
+@mixin mediaQuery($pantalla){
+    @if $pantalla == 'tablet' {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+    @if $pantalla == 'phone' {
+        @media only screen and (max-width: 425px) {
+            @content;
+        }
+    }
+    @if $pantalla == 'ipod' {
+        @media only screen and (max-width: 320px) {
+            @content;
+        }
+    }
+}
+@mixin flexbox($direction, $justify, $aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+@mixin flexY($aling){
+    display: flex;
+    flex-direction: column;
+    align-items: $aling;
+
+}
+@mixin flexX($justify){
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+
+}
+%flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
