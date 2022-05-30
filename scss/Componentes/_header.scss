@@ -1,21 +1,10 @@
 .cabecera{
-    @include flexbox(column, center, center);
+    @include flexbox(row-reverse, center, center);
     width: 100%;
+    
    
 }
-.logo{
-    @include flexbox(row-reverse, space-between, center);
-    width: fit-content;  
-}
-.logo__h1{
-    color: map-get($colores, color-principal );
-}
-.logo__img{
-    border-radius: 50%;
-    width: 50px;
-    border: solid map-get($colores, color-principal ) 1px ;
-    margin-right: 5px;
-}
+
 .cabecera__barraNavegacion{
     background: map-get($colores, bg-gradient);
     height: fit-content;
@@ -23,15 +12,19 @@
     border:5px map-get($colores, bg-color);
     border-style: double;    
 }
+.navbar-brand{
+    position: relative;
+}
 
 .cabecera__barNav__lista{
     list-style: none;
     text-decoration: none;
     font-weight: 500;
-    @include flexbox(row, space-evenly, center);
-    width: fit-content;    
+    
+    @include flexbox(row, space-evenly, center); 
 }
 .cabecera__barNav__lista a{
+    @include flexX(center);
     @extend %boton;
 }
 .cabecera__barNav__lista a:hover{

@@ -7,10 +7,10 @@ $colores:(
 $bg-img: url(../../imgs/fondo.jpg);
 %boton{
     background-color: map-get($colores, bg-color);
-    display: inline-block;
+    
     margin: 20px;
     padding: 2px;
-    border: solid rgb(255, 249, 249) 3px;
+    border: solid rgb(255, 249, 249) 1px;
     width: fit-content;
     transition:  transform .5s, background 1s;
 }
