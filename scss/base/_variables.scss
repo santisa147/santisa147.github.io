@@ -35,6 +35,11 @@ $Width-Complete: 98%;
 
 
 @mixin mediaQuery($pantalla){
+    @if $pantalla == 'notebook' {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
     @if $pantalla == 'tablet' {
         @media only screen and (max-width: 768px) {
             @content;
@@ -46,6 +51,11 @@ $Width-Complete: 98%;
         }
     }
     @if $pantalla == 'ipod' {
+        @media only screen and (max-width: 375px) {
+            @content;
+        }
+    }
+    @if $pantalla == 'mini' {
         @media only screen and (max-width: 320px) {
             @content;
         }

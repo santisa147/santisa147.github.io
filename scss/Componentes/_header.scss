@@ -10,24 +10,80 @@
     height: fit-content;
     width: 100%;
     border:5px map-get($colores, bg-color);
-    border-style: double;    
+    border-style: double;   
+  
 }
-.navbar-brand{
-    position: relative;
+.navbarBox{
+    position:absolute;
+    left: 28.5%;
+}
+.navTXT{
+    position: absolute;
+    font-size: 0px;
+    text-decoration: none;
+    color: map-get($colores, bg-color );
 }
 
 .cabecera__barNav__lista{
     list-style: none;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 500;    
     
-    @include flexbox(row, space-evenly, center); 
 }
 .cabecera__barNav__lista a{
     @include flexX(center);
     @extend %boton;
+    
 }
 .cabecera__barNav__lista a:hover{
     transform: scale(1.5);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(202,69,29,1) 25%, rgba(202,69,29,1) 50%, rgba(202,69,29,1) 75%, rgba(0,0,0,1) 100%);
 } 
+@include mediaQuery(notebook){
+    .navbarBox{
+        
+        left: 22%;
+    }
+}
+@include mediaQuery(tablet){
+    .navbarBox{
+        position: inherit;
+        @include flexX(center);
+        
+    }
+    .navTXT{
+        left: 42.5%;
+        font-size: 30px;
+        
+    }
+}
+@include mediaQuery(phone){
+    .cabecera__barNav__lista a{
+        font-size: 11px;
+    }
+    .navTXT{
+        left: 38%;
+        font-size: 30px;
+        
+    }
+}
+@include mediaQuery(ipod){
+    .cabecera__barNav__lista a{
+        margin: 15px;
+    }
+    .navTXT{
+        left: 38%;
+        font-size: 30px;
+        
+    }
+}
+@include mediaQuery(mini){
+    .cabecera__barNav__lista a{
+        margin: 9px;
+    }
+    .navTXT{
+        left: 34%;
+        font-size: 30px;
+        
+    }
+}
