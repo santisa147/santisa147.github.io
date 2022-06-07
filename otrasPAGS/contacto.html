@@ -13,39 +13,39 @@
 </head>
 <body>
     <header class="cabecera">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark cabecera__barraNavegacion">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../imgs/icono.jfif" alt="imglogo" width="60" height="40" class="d-inline-block align-text-top rounded-pill"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav cabecera__barNav__lista  ">
-                    <a class="nav-link text-white active" href="../index.html">Home</a>
-                    <a class="nav-link text-white" href="./historia.html">Historia</a>
-                    <a class="nav-link text-white" href="./nosotros.html">Nosotros</a>
-                    <a class="nav-link text-white" href="./galeria.html">Galeria</a>
-                    <a class="nav-link text-white" href="./contacto.html">Contacto</a>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark cabecera__barraNavegacion">            
+          <div class="container-fluid">                     
+            <a class="navbar-brand" href="../index.html"><img src="../imgs/icono.jpg" alt="imglogo" width="45" height="40" class="d-inline-block align-text-top rounded-pill"></a>               
+            <h1><b><a class="navTXT"href="./index.html">MARTE</a></b></h1>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>         
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav cabecera__barNav__lista navbarBox">
+                <a class="nav-link text-white active" href="../index.html">Home</a>
+                <a class="nav-link text-white" href="./historia.html">Historia</a>
+                <a class="nav-link text-white" href="./nosotros.html">Nosotros</a>
+                <a class="nav-link text-white" href="./galeria.html">Galeria</a>
+                <a class="nav-link text-white" href="./contacto.html">Contacto</a>
               </div>
             </div>
-          </nav>
-        <audio class="audio" src="./musica.mp3" autoplay="True" loop="true" >  
-            Tu navegador no soporta el elemento <code>audio</code>.
-        </audio>
-    </header>
+          </div>
+        </nav>
+      </header>
     <main class="main">
       <h1>CONTACTO</h1>
-      <form class="contacto__form">
-          <label for="nombre_completo">Nombre y apellido:</label>
-          <input type="text" name="nombre_completo" class="form__in">
-          <label for="edad">Edad</label>
-          <input type="number" name="edad" class="form__in">
-          <label for="Email">Email</label>
-          <input type="email" name="Email" class="form__in">
-          <input type="button" value="Enviar" class="form__send">
-          <b>Proximamente le enviaremos informacion</b>
-      </form>
+        <div class="contactBox">
+            <form class="contacto__form">
+                <label for="nombre_completo">Nombre y apellido:</label>
+                <input type="text" name="nombre_completo" class="form__in">
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" class="form__in">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" class="form__in">
+                <input type="button" value="Enviar" class="form__send">
+                <b>Proximamente le enviaremos informacion</b>
+            </form>
+        </div>
     </main>
     <embed src="musica.mp3" autostarty="true" loop="3" volume="1" width="0" height="0">
     <footer class="footer">

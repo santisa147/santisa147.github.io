@@ -1,6 +1,25 @@
-
+.mainh{
+    
+    width: $Width-Complete;
+    min-height:673px;
+    border: solid map-get($colores, bg-color) 2px;
+    position: relative;
+    background-image: $bg-img;
+    background-position: center;
+}
+h1{
+    color: map-get($colores, color-principal); 
+    text-align: center;
+    text-decoration: underline;    
+}
 .continuar{
     text-decoration: none;
     color: map-get($colores, color-principal );
     
+}
+.parrafoH{
+    position: relative;
+    left:15%;
+    width: 70%;
+    text-align: center;
 }
