@@ -1,11 +1,13 @@
 .contactBox{
+    margin-top: 100px; 
     @include flexbox(column, center, center);
-    height: 700px;
+    width: $Width-Complete  ;
+    
 }
 .contacto__form{
     color: rgb(255, 255, 255);
     @include flexbox(column, center, center);
-    margin: 20px;
+    min-width: 230px;
     width: 30%;
     border: solid #fff 2px;
     padding: 20px;
@@ -16,10 +18,10 @@
 }
 .form__in{
     margin: 10px;
-    width: 20vw;
+    width: 200;
     
 }
 .form__send{
     margin:15px;
-    width: 20vw;
+    width: 200px;
 }

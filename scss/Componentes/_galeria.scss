@@ -2,3 +2,19 @@
     height: 790px;
     width: auto;
 }
+@include mediaQuery(tablet){
+    .imagen{
+        height: 400px;
+    }
+    .carrusel{
+        margin-top: 250px;
+    }
+}
+@include mediaQuery(phone){
+    .imagen{
+        height: 250px;
+    }
+    .carrusel{
+        margin-top: 200px;
+    }
+}

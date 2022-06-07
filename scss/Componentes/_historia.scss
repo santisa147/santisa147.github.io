@@ -1,7 +1,7 @@
 .mainh{
     
     width: $Width-Complete;
-    min-height:673px;
+    min-height: 765px;
     border: solid map-get($colores, bg-color) 2px;
     position: relative;
     background-image: $bg-img;
@@ -20,6 +20,8 @@ h1{
 .parrafoH{
     position: relative;
     left:15%;
+    margin-top: 40px; 
     width: 70%;
     text-align: center;
 }
+    

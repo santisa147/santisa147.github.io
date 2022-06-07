@@ -225,7 +225,7 @@ body {
 
 .mainh {
   width: 98%;
-  min-height: 673px;
+  min-height: 765px;
   border: solid #000 2px;
   position: relative;
   background-image: url(../../imgs/fondo.jpg);
@@ -243,15 +243,17 @@ h1 {
 .parrafoH {
   position: relative;
   left: 15%;
+  margin-top: 40px;
   width: 70%;
   text-align: center; }
 
 .contactBox {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 700px; }
+  width: 98%; }
 
 .contacto__form {
   color: white;
@@ -259,7 +261,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  min-width: 230px;
   width: 30%;
   border: solid #fff 2px;
   padding: 20px;
@@ -268,22 +270,46 @@ h1 {
 
 .form__in {
   margin: 10px;
-  width: 20vw; }
+  width: 200; }
 
 .form__send {
   margin: 15px;
-  width: 20vw; }
+  width: 200px; }
 
 .audio {
   position: sticky;
   right: 0;
   top: 50px; }
 
+.videoBox {
+  width: 98%;
+  text-align: center; }
+
 .video {
-  max-width: 90px;
-  position: relative;
-  left: 30%; }
+  width: 560px;
+  height: 315px; }
+
+@media only screen and (max-width: 425px) {
+  .video {
+    width: 400px; } }
+
+@media only screen and (max-width: 375px) {
+  .video {
+    width: 300px;
+    height: 200px; } }
 
 .imagen {
   height: 790px;
   width: auto; }
+
+@media only screen and (max-width: 768px) {
+  .imagen {
+    height: 400px; }
+  .carrusel {
+    margin-top: 250px; } }
+
+@media only screen and (max-width: 425px) {
+  .imagen {
+    height: 250px; }
+  .carrusel {
+    margin-top: 200px; } }
