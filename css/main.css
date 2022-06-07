@@ -10,6 +10,16 @@
   width: fit-content;
   transition: transform .5s, background 1s; }
 
+.parrafoL {
+  border: dotted white 1px;
+  padding: 5px;
+  text-align: justify;
+  color: #fdfbfb;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: oblique;
+  line-height: 30px; }
+
 .main {
   width: 98%;
   min-height: 800px;
@@ -22,16 +32,6 @@
   color: #ca451d;
   text-align: center;
   text-decoration: underline; }
-
-.parrafoL {
-  border: dotted white 1px;
-  padding: 5px;
-  text-align: justify;
-  color: #fdfbfb;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: oblique;
-  line-height: 30px; }
 
 .parrafoL__ss {
   color: #ca451d;
@@ -84,6 +84,52 @@
   text-align: center;
   position: relative;
   top: 40px; }
+
+/* responsive */
+@media only screen and (max-width: 1024px) {
+  .main__img1 {
+    height: 200px; }
+  .main__img2 {
+    height: 200px;
+    width: 220px; }
+  .gif1 {
+    height: 250px; } }
+
+@media only screen and (max-width: 768px) {
+  .main__img1 {
+    height: 170px; }
+  .main__img2 {
+    height: 170px;
+    width: 170px; }
+  .main {
+    min-height: 1000px; } }
+
+@media only screen and (max-width: 425px) {
+  .main__grid {
+    margin-top: 100px; }
+  .main__img1 {
+    height: 0px; }
+  .main__img2 {
+    height: 0px;
+    width: 0px; }
+  .gif1 {
+    width: 400px; }
+  .main__card3 {
+    grid-column: 1/4;
+    grid-row: 1/2; }
+  .main__card5 {
+    grid-row: 2/3; }
+  .main {
+    height: fit-content;
+    min-height: 800px; } }
+
+@media only screen and (max-width: 375px) {
+  .gif1 {
+    width: 350px; } }
+
+@media only screen and (max-width: 320px) {
+  .gif1 {
+    width: 250px; } }
 
 body {
   position: relative;

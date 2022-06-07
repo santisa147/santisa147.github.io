@@ -12,14 +12,7 @@
     text-decoration: underline;    
 }
 .parrafoL {
-    border: dotted rgb(255, 255, 255) 1px;
-    padding: 5px;
-    text-align: justify;
-    color: rgb(253, 251, 251);
-    font-size: 18px;
-    font-weight: 400;
-    font-style: oblique;
-    line-height: 30px;     
+    @extend %parrafo;
 }
 .parrafoL__ss{
     color: map-get($colores, color-principal); 
@@ -73,4 +66,68 @@
     position: relative;
     top: 40px;
 
+}
+/* responsive */
+@include mediaQuery(notebook){
+    .main__img1{
+        height: 200px;
+        
+    }
+    .main__img2{
+        height: 200px;
+        width: 220px;
+    }
+    .gif1{
+        height: 250px;
+    }
+}
+@include mediaQuery(tablet){
+    .main__img1{
+        height: 170px;
+        
+    }
+    .main__img2{
+        height: 170px;
+        width: 170px;
+    }
+    .main{
+        min-height: 1000px;
+    }
+}
+@include mediaQuery(phone){
+    .main__grid{
+        margin-top: 100px;
+    }
+    .main__img1{
+        height: 0px;
+        
+    }
+    .main__img2{
+        height: 0px;
+        width: 0px;
+    }
+    .gif1{
+        width: 400px;
+    }
+    .main__card3{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .main__card5{
+        grid-row: 2/3;
+    }
+    .main{
+        height: fit-content;
+        min-height: 800px;
+    }
+}
+@include mediaQuery(ipod){
+    .gif1{
+       width: 350px;
+    }
+}
+@include mediaQuery(mini){
+    .gif1{
+        width: 250px;
+     }
 }
